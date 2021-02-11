@@ -1,1 +1,30 @@
-.nav{background-image: url(../img/teste-navbar.jpg); min-height: 80px;}
+
+header { display:table; width:100%; position: absolute; z-index: 998; background:#0000007a; left:0; top:0;}
+	header .principal {padding:40px 0; }
+		header .principal .row {align-items:center;}
+        .responsive {display: none;}
+        .btnResponsive{top:10px; left:115px;}
+#logo img {width: 160px ; }
+.nav{justify-content: center; background-color: #c3c3c3;}
+.menu{list-style:none;float:left;padding-top: 4rem; font-size: 20px; }
+    .menu li{position:relative; float:left}
+    .menu li a{color:#fff; text-decoration:none; padding:5px 10px; display:block;}
+        .menu li a:hover{background:#c3c3c3; color:#fff; -moz-box-shadow:0 3px 10px 0 #CCC; -webkit-box-shadow:0 3px 10px 0 #ccc;}
+
+@media all  and ( max-width:768px){
+    .responsive {display: block;}
+    .menu {display:none;}
+    #logo img {width: 75px; }
+}
+@media only screen  and ( max-width:750px){
+    .btnResponsive{top:10px; left:130px;}
+}
+@media only screen  and ( max-width:425px){
+    .btnResponsive{top:10px; left:50px;}
+}
+@media only screen  and ( max-width:375px){
+    .btnResponsive{top:10px; left:50px;}
+}
+@media only screen  and ( max-width:320px){
+    .btnResponsive{top:10px; left:50px;}
+}
