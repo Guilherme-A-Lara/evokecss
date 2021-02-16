@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="resposivo">
+		<h1 class="logo">Logo</h1>
+		<div class="chamaResponsivo">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+			<li><a href="">Menu</a></li>
+		</ul>
+	</div>
+<style>
+	* {box-sizing: border-box;}
+	body  {padding: 0; margin: 0; position: relative;}
+
+	header {display:table ;padding: 30px ; background: #333; width: 100%;}
+		header .logo {font-size: 36px;color: #fff; float: left; margin: 0; padding: 0;}
+		header .chamaResponsivo {display: block; padding: 10px; background: lightcoral;float: right;}
+		header .chamaResponsivo div {display: block; width: 40px; height: 5px; background: #fff;}
+		header .chamaResponsivo div:nth-child(2) {margin-top: 3px; margin-bottom: 3px;}
+
+	.menu {position: fixed; top: 0; left: -75%;  display: block; width: 75%; height: 100%; background: cadetblue;}
+	
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		var statusMenu = 0;
+		$('.chamaResponsivo').click(function(event){
+			if(statusMenu == 1){
+				$('.menu').animate({left:"-75%"}, 1000 );
+				statusMenu = 0;
+			
+			}else{
+				$('.menu').animate({left:0}, 1000);
+				statusMenu =  1;
+				
+			}
+		})
+	})
+</script>
+</body>
+</html>
+
+	 
+	
+   
