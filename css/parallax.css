@@ -1,0 +1,32 @@
+.parallax {
+    /* The image used */
+    background-image: url("../img/parallaxNav.jpg");
+    filter: blur(#999);
+    /* Set a specific height */
+    height: 400px;
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-nav {
+/* The image used */
+    background-image: url("../img/parallaxNav.jpg");
+    /* Set a specific height */
+    height: 100px;
+    z-index: -999999;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-nav img {filter: blur(2px)}
+
+@media all  and ( max-width:768px){
+    .parallax{display: none;}
+    .parallax-nav{background: rgb(249 249 249); padding-bottom: 0;}
+}
