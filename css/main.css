@@ -39,7 +39,7 @@ header {display:none;}
 
 .features {padding-bottom: 45px;padding-top: 3rem;background-image: url(../img/aviao-site-section-servicos.jpg); background-position: center; /* Center the image */}
     .features h2 {color: #999;padding-bottom: 3rem;}
-    .feature-col {display: table;padding-bottom: 45px;}
+    .feature-col {display: table;padding-bottom: 45px;opacity: 0.90;}
     .feature-col>div>div {display: table-cell;vertical-align: middle;padding-top: 1rem;}
     .feature-col>div>div:last-child {padding-left: 20px;}
     .feature-col .feature-icon {width: 70px;height: 70px;margin-bottom: 15px;background: lightseagreen;color: #fff;font-size: 24px;text-align: center;line-height: 70px; border-radius: 50%;display: inline-block;}
