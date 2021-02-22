@@ -3,7 +3,7 @@
     background-image: url("../img/parallaxNav.jpg");
     filter: blur(#999);
     /* Set a specific height */
-    height: 400px;
+    height: 600px;
     
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
